@@ -10,7 +10,6 @@ print("-------------------")
 # asking user for an input 
 #
 
-
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors':")
 
 #print(x)
@@ -40,18 +39,25 @@ print(f"The Computer Chose: {computer_choice}")
 
 
 
+#
+#determining who won
+#
 
 
-
-
-
-
-
-
-exit()
+# when doing comparables, you have to do two equal signs
 
 print("-------------------")
 
-print("Oh, the computer won. It's ok.")
+if computer_choice == user_choice: 
+    print ("It's a Tie!")
+    elif user_choice == "paper" and computer_choice == "rock":
+        print ("Yay! You Won!")    
+    elif user_choice == "rock" and computer_choice == "scissors":
+        print("Yay! You Won!")
+    elif user_choice == "scissors" and computer_choice == "paper":
+        print("Yay! You Won!")
+    else:   
+        print ("Boo! You Lost!")
+
 print("-------------------")
 print("Thanks for playing. Please play again!")
