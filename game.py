@@ -12,6 +12,20 @@ print("-------------------")
 
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors':")
 
+#
+#validate the user selection
+#
+# stop the program (not try to determine the winer)
+#... if the user choice is invalid
+
+user_choice.lower()
+
+
+options = ("paper", "rock" , "scissors")
+if user_choice not in options:
+    print("OOPS, please choose a valid option and try again")
+    exit()
+
 #print(x)
 #printing many things separated by commas
 #print ("You chose:", x, "another string", "something else", x)
@@ -29,20 +43,14 @@ print(f"You Chose: {user_choice}")
 # simulating a computer input
 #
 
-
-options = ("paper", "rock" , "scissors")
 computer_choice = random.choice(options)
 
 print(f"The Computer Chose: {computer_choice}")
 
 
-
-
-
 #
 #determining who won
 #
-
 
 # when doing comparables, you have to do two equal signs
 
@@ -50,14 +58,18 @@ print("-------------------")
 
 if computer_choice == user_choice: 
     print ("It's a Tie!")
-    elif user_choice == "paper" and computer_choice == "rock":
-        print ("Yay! You Won!")    
-    elif user_choice == "rock" and computer_choice == "scissors":
-        print("Yay! You Won!")
-    elif user_choice == "scissors" and computer_choice == "paper":
-        print("Yay! You Won!")
-    else:   
-        print ("Boo! You Lost!")
+elif user_choice == "paper" and computer_choice == "rock":
+    print ("Yay! You Won!")    
+elif user_choice == "rock" and computer_choice == "scissors":
+    print("Yay! You Won!")
+elif user_choice == "scissors" and computer_choice == "paper":
+    print("Yay! You Won!")  
+elif user_choice == "paper" and computer_choice == "scissors":
+    print ("Boo! You Lost!")
+elif user_choice == "rock" and computer_choice == "paper":
+    print ("Boo! You Lost!")
+elif user_choice == "scissors" and computer_choice == "rock":
+    print ("Boo! You Lost!")
 
 print("-------------------")
 print("Thanks for playing. Please play again!")
