@@ -18,8 +18,7 @@ user_choice = input("Please choose either 'rock', 'paper', or 'scissors':")
 # stop the program (not try to determine the winer)
 #... if the user choice is invalid
 
-user_choice.lower()
-
+user_choice = user_choice.lower()
 
 options = ("paper", "rock" , "scissors")
 if user_choice not in options:
@@ -43,7 +42,7 @@ print(f"You Chose: {user_choice}")
 # simulating a computer input
 #
 
-computer_choice = random.choice(options)
+computer_choice = random.choice (options)
 
 print(f"The Computer Chose: {computer_choice}")
 
