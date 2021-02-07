@@ -16,11 +16,11 @@ Then navigate there from the command line (subsequent commands assume you are ru
 cd rock-paper-scissors-exercise
 ```
 
-Use Anaconda to create and activate a new virtual environment, perhaps called "my-first-env":
+Use Anaconda to create and activate a new virtual environment, perhaps called "my-game-env":
 
 ```sh
-conda create -n my-first-env python=3.8
-conda activate my-first-env
+conda create -n my-game-env python=3.8
+conda activate my-game-env
 ```
 
 From inside the virtual environment, install package dependencies:
