@@ -6,7 +6,7 @@ import random
 from dotenv import load_dotenv
 
 load_dotenv()
-USER_NAME = os.getenv("PLAYER_NAME", default="Player One")
+PLAYER_NAME = os.getenv("PLAYER_NAME", default="Player One")
 
 print("-------------------")
 print("WELCOME TO MY APP!")
@@ -15,7 +15,7 @@ print(f"PLAYER: '{PLAYER_NAME}'")
 import random
 
 print("-------------------")
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print(f"Welcome'{PLAYER_NAME}' my Rock-Paper-Scissors game...")
 print("-------------------")
 
 
